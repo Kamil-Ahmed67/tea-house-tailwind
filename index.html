@@ -10,6 +10,17 @@
 800&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://kit.fontawesome.com/4beac62ac6.js" crossorigin="anonymous"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
 <style>
     .manrope {
   font-family: "Manrope", sans-serif;
@@ -17,6 +28,34 @@
 </style>
 </head>
 <body>
-    
+  <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
+  <header class="flex pt-10 mb-20">
+     <!-- text content -->
+      <div>
+       <h1 class="text-5xl md:text-7xl">It's good <br>
+        tea time at The <br> Tea House</h1><br>
+        <p class="text-gray-500 w-3/4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p><br>
+        <button class="px-5 py-3 font-bold rounded-lg text-white bg-gradient-to-r from-[#FF0000] to-[#FF8938]">
+          Explore More <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i></button>
+      </div>
+      <!-- Image Content -->
+       <div class="relative">
+        <!-- image -->
+         <div>
+          <img class="w-full" src="/images/banner.png" alt="">
+         </div>
+         <!-- Card -->
+          <div class="lg:left-28 md:left-32 md:top-80 top-28 absolute flex items-center bg-white shadow-lg px-2 py-10 md:px-10 lg:py:10 rounded-lg">
+            <!-- icon -->
+             <div><i class="fa-solid fa-star text-2xl text-amber-500"></i></div>
+             <!-- text -->
+             <div class="ml-2">
+              <h2 class="lg:text-2xl font-bold">5.00</h2>
+              <p class="text-gray-500">Trust Pilot Ratings</p>
+             </div>
+          </div>
+       </div>
+  </header>
+  </main>
 </body>
 </html>
